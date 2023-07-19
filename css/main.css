@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  font-family: 'DM Sans', sans-serif;
+  color: #333;
+  font-size: 16px;
+}
+
+h2, h3, h4, h5 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+.lead {
+  font-size: 1.3rem;
+}
+
+.container, .container-fluid {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+  position: relative;
+}
+.container {
+  max-width: 1300px;
+}
+img {
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+.hamburger {
+  
+}
+.block {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #2a2a2a;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+btn:focus {
+  outline: none;
+}
+
+header .navbar {
+  z-index: 9;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header .navbar .mobile-menu {
+  position: absolute;
+  top: 86px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  display: none;
+  overflow: scroll;
+  position: fixed;
+  height: 100%;
+  padding: 0 1.4rem;
+  text-align: left;
+}
+
+header .navbar .mobile-menu .languages {
+  display: flex;
+  padding-left: 0;
+}
+
+header .navbar .mobile-menu .languages img {
+  padding-left: 0;
+}
+
+header .navbar .navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+header .navbar .navbar-inner .navbar-nav {
+  display: flex;
+}
+
+header .navbar .navbar-inner .navbar-nav li {
+  padding: 1rem 2rem;
+  display:inline-block;
+  width: 100%;
+}
+
+header .navbar .navbar-inner .navbar-nav li a {
+  transition: 0.4s;
+}
+
+header .navbar .navbar-inner .navbar-nav li a:hover {
+  color: #2a2a2a;
+  text-decoration: none;
+}
+
+header .navbar .navbar-inner .left_nav {
+  display: flex;
+}
+
+header .navbar .navbar-inner .navbar-brand {
+  display: inline-block;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+header .navbar .navbar-inner .right-side {
+  display: flex;
+  gap: 2rem;
+}
+header .navbar .navbar-inner .right-side i {
+  font-size: 1.4rem;
+}
+main {
+  padding: 0 0 5rem 0;
+}
