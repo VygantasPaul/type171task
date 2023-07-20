@@ -303,7 +303,11 @@ main .content .content-grid__wrap .grid_column .content-grid__photo-box img {
   width: 100%;
   object-fit: cover;
 }
-
+footer {
+  border-top: 2px solid #2374e8;
+  padding: 2rem ;
+  text-align: center;
+}
 @media only screen and (min-width: 768px) {
   main .heading-banner {
     display: flex;
@@ -318,7 +322,6 @@ main .content .content-grid__wrap .grid_column .content-grid__photo-box img {
   main .content .content-grid__wrap.publicition .grid_column { 
     min-height: 15rem;
   }
-  
   
   main .content .content-grid__wrap .grid_column__bottom h3 {
     font-size: 1.4rem;
@@ -337,7 +340,7 @@ main .content .content-grid__wrap .grid_column .content-grid__photo-box img {
   header .navbar .mobile-menu.open {
     display: none;
   }
-  header .navbar .navbar-inner  .world {
+  header .navbar .navbar-inner .world {
     display: block;
   }
   header .navbar .navbar-inner .navbar-nav {
