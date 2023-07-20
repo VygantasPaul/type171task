@@ -20,20 +20,20 @@
           <div class="navbar-inner">
             <div class="left_nav">
               <h1 class="logo"><a class="navbar-brand" href="#">SWN </a></h1>
-             
+              
             </div>
             <ul class="nav navbar-nav">
               <li><a href="#">About</a></li>
               <li><a href="#">Operations</a></li>
               <li><a href="#">Investors</a></li>
               <li><a href="#">News</a></li>
-            
+              
             </ul>
             <div class="nav right-side">
               <a href="#" class="world"><i class="fa-solid fa-globe"></i></a>
               <a href="#" class="hamburger"><i class="fa-solid fa-bars"></i></a>
             </div>
-         
+            
             <div class="mobile-menu">
               <ul class="nav navbar-nav">
                 <li><a href="#">About</a></li>
@@ -41,33 +41,56 @@
                 <li><a href="#">Investors</a></li>
                 <li><a href="#">News</a></li>
               </li>
-             
+              
             </ul>
           </div>
         </div>
+        
       </div>
-    </nav>
-  </header>
-  <main>
-    <div class="content">
-      <div class="container">
-      
-      </div>
-    
-      </main>
-      <footer>
-  
-      </footer>
     </div>
+  </nav>
+</header>
+<main>
+
+  <div class="content">
+    <div class="container">
+      <div class="heading-banner">
+        <div>
+          <em>News and updates <br>
+            Publicition Library</em>
+          </div>
+          <div>
+            <h2>In the <br> news</h2>
+          </div>
+          <div class="heading-icon">
+            <i class="fa-solid fa-arrow-down"></i>
+          </div>
+        </div>
     
-  </body>
-  <script>
-    const mobile_menu = document.querySelector('.mobile-menu');
-    document.querySelector('.hamburger').addEventListener("click", respondToClick);
-    function respondToClick (event) {
-      event.preventDefault();
-      mobile_menu.classList.toggle("open");
-    }
-  </script>
-  </html>
+      <div class="content-grid__wrap">
+        <div class="content-grid__photo-box">
+          <img src="img/1.jpg" alt="">
+        </div>
+        <div class="content-grid__text-box">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestias, minus distinctio nemo nulla, amet atque hic nostrum, reiciendis cupiditate quam voluptate fugiat eius eveniet ullam blanditiis dicta ipsum assumenda!</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
   
+</footer>
+</div>
+
+</body>
+<script>
+  const mobile_menu = document.querySelector('.mobile-menu');
+  document.querySelector('.hamburger').addEventListener("click", respondToClick);
+  function respondToClick (event) {
+    event.preventDefault();
+    mobile_menu.classList.toggle("open");
+  }
+</script>
+</html>

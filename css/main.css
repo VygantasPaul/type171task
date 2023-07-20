@@ -5,19 +5,17 @@
 }
 
 body {
-  background: white;
+  background-color: #f7f7f7;
   font-family: 'DM Sans', sans-serif;
   color: #333;
   font-size: 16px;
+  padding-top: 7rem;
 }
 
 h2, h3, h4, h5 {
   margin: 0;
 }
 
-h1 {
-  font-size: 1.2rem;
-}
 
 .lead {
   font-size: 1.3rem;
@@ -39,12 +37,7 @@ img {
   display: block;
   max-width: 100%;
 }
-.hamburger {
-  
-}
-.block {
-  display: block;
-}
+
 
 a {
   text-decoration: none;
@@ -101,7 +94,7 @@ header .navbar .navbar-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 0;
+  padding: 0.8rem 0;
   text-align: center;
 }
 
@@ -110,13 +103,14 @@ header .navbar .navbar-inner .navbar-nav {
 }
 
 header .navbar .navbar-inner .navbar-nav li {
-  padding: 1rem 2rem;
+  padding: 1rem 1.7rem;
   display:inline-block;
   width: 100%;
 }
 
 header .navbar .navbar-inner .navbar-nav li a {
   transition: 0.4s;
+  text-transform: uppercase;
 }
 
 header .navbar .navbar-inner .navbar-nav li a:hover {
@@ -140,6 +134,43 @@ header .navbar .navbar-inner .right-side {
 header .navbar .navbar-inner .right-side i {
   font-size: 1.4rem;
 }
-main {
-  padding: 0 0 5rem 0;
+
+main .heading-banner {
+  display: block;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+  text-align: center;
+  
+}
+main .heading-banner h2 {
+  font-size:2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+main .heading-banner .fa-arrow-down {
+  font-size: 9rem;
+  
+}
+main .heading-banner .heading-icon {
+  align-self: flex-end;
+}
+
+@media only screen and (min-widith:445px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+  main .heading-banner {
+    display: block;
+  }
+
+}
+@media only screen and (min-width: 992px) {
+  main .heading-banner h2 {
+    font-size:6rem;
+    line-height: 7rem;
+  }
+  main .heading-banner {
+    display: flex;
+  }
 }
