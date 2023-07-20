@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="title" content="Hostinger - svetainiu kurimas">
-  <meta name="description" content="Hostinger svetainiu kurimas domenai">
+  <meta name="title" content="In the news ">
+  <meta name="description" content="In the news blabla">
   <title>Task17 - 1 task</title>
   <script src="https://kit.fontawesome.com/89937a7b06.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css" / type="text/css">
 </head>
 <body>
@@ -19,8 +19,7 @@
         <div class="container">
           <div class="navbar-inner">
             <div class="left_nav">
-              <h1 class="logo"><a class="navbar-brand" href="#">SWN </a></h1>
-              
+              <h1 class="logo"><a class="navbar-brand" href="#">SWN</a></h1>
             </div>
             <ul class="nav navbar-nav">
               <li><a href="#">About</a></li>
@@ -33,7 +32,6 @@
               <a href="#" class="world"><i class="fa-solid fa-globe"></i></a>
               <a href="#" class="hamburger"><i class="fa-solid fa-bars"></i></a>
             </div>
-            
             <div class="mobile-menu">
               <ul class="nav navbar-nav">
                 <li><a href="#">About</a></li>
@@ -41,13 +39,10 @@
                 <li><a href="#">Investors</a></li>
                 <li><a href="#">News</a></li>
               </li>
-              
             </ul>
           </div>
         </div>
-        
       </div>
-      
     </nav>
   </header>
   <main>
@@ -55,14 +50,14 @@
     <div class="content">
       <div class="container">
         <section class="heading-banner">
-          <div>
+          <div class="heading-banner__subheading-left">
             <em>News and updates <br>
               Publicition Library</em>
-            </div>
-            <div>
+          </div>
+          <div class="heading-banner__subheading-center">
               <h2>In the <br> news</h2>
-            </div>
-            <div class="heading-icon">
+          </div>
+          <div class="heading-banner__subheading-right">
               <i class="fa-solid fa-arrow-down"></i>
             </div>
           </section>
@@ -121,44 +116,55 @@
             </div>  
             <section class="content-grid__wrap publicition">
               <div class="content-grid__columns">
-                <div class="grid_column">
+                <a href="" class="grid_column background-blue">
                   <div class="grid_column__top">
                     <h4>SWN</h4>
                   </div>
                   <div class="grid_column__bottom">
-                    <h4>Corporate </h4>
-                    <p>Fast feet</p>
+                    <div>
+                      <h3>Corporate </h3>
+                      <p>Fast feet</p>
+                    </div>
+                    <div class="content-grid__button">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
                   </div>
-                </div>
-                <div class="grid_column">
+                </a>
+                <a href="" class="grid_column background-black">
                   <div class="grid_column__top">
                     <h4>SWN</h4>
                   </div>
                   <div class="grid_column__bottom">
-                    <h4>Seismic survey </h4>
-                    <p>Fast feet</p>
+                    <div>
+                      <h3>Seismic survey </h3>
+                      <p>Fast feet</p>
+                    </div>
+                    <div class="content-grid__button">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
                   </div>
-                </div>
-            </div>
-            <div class="content-grid__button">
-              <button type="button"> <span> Load More</span> <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-          </section>
+                </a>
+              </div>
+              <div class="content-grid__button">
+                <button type="button"> <span> Load More</span> <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </section>
+          </div>
         </div>
-      </div>
-    </main>
-    <footer>
-      
-    </footer>
-  </div>
+      </main>
+      <footer>
+        
+      </footer>
+    </div>
+    
+  </body>
+  <script>
+    const mobile_menu = document.querySelector('.mobile-menu');
+    document.querySelector('.hamburger').addEventListener("click", respondToClick);
+    function respondToClick (event) {
+      event.preventDefault();
+      mobile_menu.classList.toggle("open");
+    }
+  </script>
+  </html>
   
-</body>
-<script>
-  const mobile_menu = document.querySelector('.mobile-menu');
-  document.querySelector('.hamburger').addEventListener("click", respondToClick);
-  function respondToClick (event) {
-    event.preventDefault();
-    mobile_menu.classList.toggle("open");
-  }
-</script>
-</html>
