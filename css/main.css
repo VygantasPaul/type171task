@@ -73,10 +73,7 @@ header .navbar .mobile-menu {
   width: 100%;
   background-color: white;
   display: none;
-  overflow: scroll;
   position: fixed;
-  height: 100%;
-  padding: 0;
   text-align: left;
 }
 header .navbar .mobile-menu.open {
@@ -416,6 +413,9 @@ footer {
   }
   main .content .content-grid__wrap .grid_column .content-grid__text-box h4{
     font-size: 1.4rem;
+  }
+  header .navbar .mobile-menu.open {
+    display: none;
   }
   
 }
